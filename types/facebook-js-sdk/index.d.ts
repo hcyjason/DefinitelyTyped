@@ -337,6 +337,11 @@ declare namespace facebook {
         return_scopes?: boolean | undefined;
         enable_profile_selector?: boolean | undefined;
         profile_selector_ids?: string | undefined;
+        extras?: {
+            feature?: whatsapp_embedded_signup | undefined;
+            version: number | undefined;
+            sessionInfoVersion: number | undefined;
+        }
     }
 
     ////////////////////////
