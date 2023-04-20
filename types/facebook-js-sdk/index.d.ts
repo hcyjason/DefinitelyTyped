@@ -338,10 +338,34 @@ declare namespace facebook {
         enable_profile_selector?: boolean | undefined;
         profile_selector_ids?: string | undefined;
         extras?: {
-            feature?: string | undefined;
+            feature?: string;
             version?: number | undefined;
             sessionInfoVersion?: number | undefined;
-        }
+            setup?: {
+                business?: {
+                    name?: string,
+                    email?: string,
+                    phone?: {
+                        code: number | string,
+                        number: number | string
+                    },
+                    website?: string,
+                    address?: {
+                        streetAddress1?: string,
+                        city?: string,
+                        state?: string,
+                        zipPostal?: string,
+                        country?: string
+                    },
+                    timezone?:string
+                },
+                phone?: {
+                    displayName?: string,
+                    category?: string,
+                    description?: string 
+                }
+            },
+        };
     }
 
     ////////////////////////
