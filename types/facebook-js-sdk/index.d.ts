@@ -342,6 +342,7 @@ declare namespace facebook {
             version?: number | undefined;
             sessionInfoVersion?: number | undefined;
             setup?: {
+                channel?: string,
                 business?: {
                     name?: string,
                     email?: string,
