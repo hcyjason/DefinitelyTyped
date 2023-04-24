@@ -337,6 +337,7 @@ declare namespace facebook {
         return_scopes?: boolean | undefined;
         enable_profile_selector?: boolean | undefined;
         profile_selector_ids?: string | undefined;
+        messenger_page_id?: number | string | undefined;
         extras?: {
             feature?: string;
             version?: number | undefined;
