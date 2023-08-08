@@ -334,6 +334,8 @@ declare namespace facebook {
     interface LoginOptions {
         auth_type?: 'reauthenticate' | 'reauthorize' | 'rerequest' | undefined;
         scope?: string | undefined;
+        config_id?: string | undefined;
+        response_type?: string | undefined;
         return_scopes?: boolean | undefined;
         enable_profile_selector?: boolean | undefined;
         profile_selector_ids?: string | undefined;
