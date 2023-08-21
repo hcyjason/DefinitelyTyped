@@ -514,6 +514,8 @@ declare namespace facebook {
         userID: string;
         grantedScopes?: string | undefined;
         reauthorize_required_in?: number | undefined;
+        code: string;
+        token: string;
     }
 
     interface StatusResponse {
