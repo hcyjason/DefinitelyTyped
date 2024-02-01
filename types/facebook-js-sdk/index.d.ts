@@ -340,6 +340,7 @@ declare namespace facebook {
         enable_profile_selector?: boolean | undefined;
         profile_selector_ids?: string | undefined;
         messenger_page_id?: number | string | undefined;
+        override_default_response_type?: boolean | undefined;
         extras?: {
             feature?: string;
             version?: number | undefined;
@@ -507,14 +508,14 @@ declare namespace facebook {
     //
     ////////////////////////
     interface AuthResponse {
-        accessToken: string;
-        data_access_expiration_time: number;
+        accessToken?: string | undefined;
+        data_access_expiration_time?: number | undefined;
         expiresIn: number;
-        signedRequest: string;
+        signedRequest?: string | undefined;
         userID: string;
         grantedScopes?: string | undefined;
         reauthorize_required_in?: number | undefined;
-        code: string;
+        code?: string | undefined;
         token: string;
     }
 
